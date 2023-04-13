@@ -7,3 +7,12 @@ public void preOrderTraversal(Node root){
       preOrderTraversal(root.left);
       preOrderTraversal(root.right);
    }
+public void inOrderTraversal(Node root){
+      //implement me
+      if(root == null){
+         return;
+      }
+      inOrderTraversal(root.left);
+      System.out.print(root.value + ", ");
+      inOrderTraversal(root.right);
+   }
