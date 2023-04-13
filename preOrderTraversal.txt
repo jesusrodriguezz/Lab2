@@ -26,3 +26,18 @@ public void postOrderTraversal(Node root){
       System.out.print(root.value + ", ");
 
    }
+public boolean find(Node root, int key){
+	  //implement me
+     if(root == null){
+      return false;
+     }
+     if(root.value == key){
+      return true;
+     }
+     if(key < root.value){
+      find(root.left, key);
+     }
+      return find(root.right, key);
+   
+                 
+   }
