@@ -16,3 +16,13 @@ public void inOrderTraversal(Node root){
       System.out.print(root.value + ", ");
       inOrderTraversal(root.right);
    }
+public void postOrderTraversal(Node root){
+      //implement me
+      if(root == null){
+         return;
+      }
+      postOrderTraversal(root.left);
+      postOrderTraversal(root.right);
+      System.out.print(root.value + ", ");
+
+   }
