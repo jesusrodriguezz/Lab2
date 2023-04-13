@@ -41,3 +41,14 @@ public boolean find(Node root, int key){
    
                  
    }
+public int getMin(Node root){
+      //implement me
+     if(root == null){
+      System.out.println("empty tree");
+     }
+     if(root.left == null){
+      return root.value;
+     }
+     return getMin(root.left);
+
+   }
