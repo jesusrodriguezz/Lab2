@@ -29,6 +29,7 @@ public void postOrderTraversal(Node root){
       System.out.print(root.value + ", ");
 
    }
+// find method
 public boolean find(Node root, int key){
 	  //implement me
      if(root == null){
@@ -44,6 +45,7 @@ public boolean find(Node root, int key){
    
                  
    }
+// get min method
 public int getMin(Node root){
       //implement me
      if(root == null){
@@ -55,6 +57,7 @@ public int getMin(Node root){
      return getMin(root.left);
 
    }
+// get max method
 public int getMax(Node root){
 	  //implement me
      if(root == null){
