@@ -1,3 +1,4 @@
+// pre order traversal using recursion
 public void preOrderTraversal(Node root){
       //implement me
       if(root == null){
@@ -7,6 +8,7 @@ public void preOrderTraversal(Node root){
       preOrderTraversal(root.left);
       preOrderTraversal(root.right);
    }
+// in order traversal using recursion
 public void inOrderTraversal(Node root){
       //implement me
       if(root == null){
@@ -16,6 +18,7 @@ public void inOrderTraversal(Node root){
       System.out.print(root.value + ", ");
       inOrderTraversal(root.right);
    }
+// post order traversal using recursion
 public void postOrderTraversal(Node root){
       //implement me
       if(root == null){
