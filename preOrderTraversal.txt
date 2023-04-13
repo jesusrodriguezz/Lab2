@@ -52,3 +52,14 @@ public int getMin(Node root){
      return getMin(root.left);
 
    }
+public int getMax(Node root){
+	  //implement me
+     if(root == null){
+      System.out.println("Empty tree");
+     }
+     if(root.right == null){
+      return root.value;
+     }
+     return getMax(root.right);
+   }
+   
